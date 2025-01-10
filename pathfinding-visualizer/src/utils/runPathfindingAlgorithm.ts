@@ -6,6 +6,8 @@ import { dfs } from "../lib/algorithms/pathfinding/dfs";
 
 import { dijkstra } from "../lib/algorithms/pathfinding/dijkstra";
 
+import { aStar } from "../lib/algorithms/pathfinding/aStar";
+
 export const runPathfindingAlgorithm = ({
   algorithm,
   grid,
