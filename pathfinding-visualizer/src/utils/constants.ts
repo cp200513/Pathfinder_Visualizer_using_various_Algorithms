@@ -1,8 +1,8 @@
 import { MazeSelectType, SpeedSelectType } from "./types";
 import { AlgorithmSelectType } from "./types";
 
-export const MAX_ROWS = 39;
-export const MAX_COLS = 49;
+export const MAX_ROWS = 59;
+export const MAX_COLS = 69;
 
 export const START_TILE_CONFIGURATION = {
   row: 1,
@@ -29,12 +29,16 @@ export const END_TILE_CONFIGURATION = {
 };
 
 export const TILE_STYLE =
-  "lg:w-[17px] md:w-[15px] xs:w-[8px] w-[7px] lg:h-[17px] md:h-[15px] xs:h-[8px] h-[7px] border-t border-r border-sky-200";
-export const TRAVERSED_TILE_STYLE = TILE_STYLE + " bg-cyan-500";
-export const START_TILE_STYLE = TILE_STYLE + " bg-green-500";
-export const END_TILE_STYLE = TILE_STYLE + " bg-red-600";
-export const WALL_TILE_STYLE = TILE_STYLE + " bg-gray-200";
-export const PATH_TILE_STYLE = TILE_STYLE + " bg-green-600";
+  "lg:w-[17px] md:w-[15px] xs:w-[8px] w-[7px] lg:h-[17px] md:h-[15px] xs:h-[8px] h-[7px] border-t border-r border-indigo-900";
+export const TRAVERSED_TILE_STYLE = TILE_STYLE + " bg-teal-100"; // Soft teal
+export const START_TILE_STYLE =
+  TILE_STYLE +
+  " bg-green-300 shadow-[0_-8px_16px_#39FF14,0_8px_16px_#39FF14,-8px_0_16px_#39FF14,8px_0_16px_#39FF14]"; // Light mint green
+export const END_TILE_STYLE =
+  TILE_STYLE +
+  " bg-rose-300 bg-rose-300 shadow-[0_-8px_16px_#FDA4AF,0_8px_16px_#FDA4AF,-8px_0_16px_#FDA4AF,8px_0_16px_#FDA4AF]"; // Soft rose pink
+export const WALL_TILE_STYLE = TILE_STYLE + " bg-indigo-300"; // Very light gray
+export const PATH_TILE_STYLE = TILE_STYLE + " bg-orange-500 animate-pulse"; // Light indigo
 
 export const MAZES: MazeSelectType[] = [
   { name: "No Maze", value: "NONE" },
